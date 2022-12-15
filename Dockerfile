@@ -29,7 +29,7 @@ RUN \
     # Create a symbolic link to llmk
     ln -s /usr/share/texlive/texmf-dist/scripts/light-latex-make/llmk.lua /usr/local/bin/llmk
 
-VOLUME ["/root/.texlive2021/texmf-var/luatex-cache"]
+VOLUME ["/var/lib/texmf/luatex-cache"]
 
 WORKDIR /workdir
 
